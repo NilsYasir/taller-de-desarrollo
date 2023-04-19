@@ -46,7 +46,7 @@
 
         document.write("Este es un numero generado con JS");
         document.write(50 / 60);
-        window.alert("Esta es una alerta");
+        //window.alert("Esta es una alerta");
 
         var cadena = "Hola consola JS";
         console.log(cadena);
@@ -90,6 +90,104 @@
             console.log("Primero "+variableLocal);
         }
         console.log("Segundo "+variableLocal);
-    </script>
+
+        const autos = ["VW","Chevrolet","BMW0",10,true,"Hola","Mundo"];
+        console.log(autos);
+        console.log(autos[2]);
+        console.log(autos[3]);
+        console.log(autos[4]);
+        console.log(autos.length);
+
+        const autoNuevo = {
+            tipo : "Toyota Carry",
+            modelo : 500,
+            color : "Blanco"
+        }
+        console.log(autoNuevo);
+        console.log(autoNuevo.color);
+        autoNuevo.color = "Rojo";
+        console.log(autoNuevo.color);
+
+        var x1 = 4.5;
+        console.log(typeof x1);
+
+        
+        var y1 = 10;
+        console.log(typeof y1);
+
+        
+        var z1 = "Hola";
+        console.log(typeof z1);
+        console.log(typeof auto);
+        console.log(typeof autoNuevo);
+        console.log(5 * 10);
+        console.log(3 > 10);
+        console.log("Thor" > "Iron Man")
+        console.log("a" > "b");
+        console.log("de" > "bc");
+        console.log(true && false);
+        console.log(true && true);
+        console.log(true ? 1 : 2);
+        console.log(false ? 1 : 2);
+
+        let edad = 10;
+        console.log(edad>20 ? "Verdadero" : "Falso");
+        console.log(8 * null);
+        console.log("5" - 1);
+        console.log("5" + 1);
+
+        let actual = 0;
+        while(actual <= 12){
+            console.log(actual);
+            actual++;
+        }
+
+        for(let numero = 0; numero <= 12; numero++){
+            console.log("for $numero")
+        }
+
+        var cuenta = 2;
+        cuenta *= 2;
+        console.log(cuenta)
+
+        let x1_ = 5;
+        let y1_ = 2;
+        let z1_ = x1_%y1_;
+        console.log(z1_);
+
+        let x4 = 5;
+        let z4 = x4 **3;
+        console.log(z4);
+
+        let x5 = 5;
+        let z5 = Math.pow(x5,2);
+        console.log(z5);
+
+        let x6 = (100 + 50)*3;
+        console.log(x6);
+
+        function miFuncion(a,b){
+            return a * b;
+        }
+        console.log(miFuncion(3,9));
+
+        const persona = {
+            nombre: "Juan",
+            apellido : "Perez",
+            id : 123,
+            nombreCompleto(){
+                return this.nombre + " " + this.apellido;
+            }
+        }
+        console.log(persona.nombreCompleto());
+        console.log(persona["apellido"]);
+
+        var personax ={
+            nombre : "Jose",
+            edad : 31,
+            ciudad : "León"
+        }
+        console.log(personax);
+        </script>
 </body>
 </html>
